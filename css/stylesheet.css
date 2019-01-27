@@ -105,16 +105,6 @@ ul.grid{
     background-color: tomato
 }
 
-.myVideo {
-	height: 100vh;
-	width: 100%;
-	min-width: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	z-index: 1;
-}
-
 /*------------
       Header
 ------------*/
@@ -275,7 +265,7 @@ header nav li:last-child{
 	flex-direction: column;
 	align-items: center;
 
-	padding: 125px 100px;
+	/*padding: 125px 100px;*/
 }
 
 .about{
