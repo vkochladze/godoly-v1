@@ -104,6 +104,17 @@ ul.grid{
 ::-moz-selection { /* Code for Firefox */
     background-color: tomato
 }
+
+.myVideo {
+	height: 100vh;
+	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
 /*------------
       Header
 ------------*/
@@ -180,7 +191,7 @@ header nav li:last-child{
   background-image: url(img/3.jpg);
   background-position: center;
   background-size: cover;
-  z-index: 1;
+  z-index: 2;
 
  /* -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
