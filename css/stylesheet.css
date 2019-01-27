@@ -76,7 +76,7 @@ section {
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize; 
-	font: bold 32px 'Open Sans', sans-serif;
+	font: 32px 'Open Sans', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
 }
@@ -259,7 +259,7 @@ header nav li:last-child{
  	Our Work Section
 ---------------------*/
 
-.our-work {
+.about {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -267,11 +267,11 @@ header nav li:last-child{
 	padding: 125px 100px;
 }
 
-.оur-work{
+.about{
 	background-color: #fff;
 }
 
-.our-work .grid li{
+.about .grid li{
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
@@ -282,24 +282,77 @@ header nav li:last-child{
 	background-color: #333;
 }
 
-.our-work .grid li.small{
+.about .grid li.small{
 	flex-basis: 40%;
 }
 
-.our-work .grid li.large{
+.about .grid li.large{
 	flex-basis: 60%;
 }
 
 
 @media (max-width: 1000px){
 
-	.our-work .grid li.small,
-	.our-work .grid li.large{
+	.about .grid li.small,
+	.about .grid li.large{
 		flex-basis: 100%;
 	}
 
 }
 
+/*----------------------
+ 	Features Section
+----------------------*/
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+/*--------*/
 
 .geo {
   margin-top: 6vw;
@@ -314,15 +367,16 @@ header nav li:last-child{
 .fa {
     padding: 30px;
     font-size: 25px !important;
-    width: 25px;
+    width: 85px;
     text-align: center;
-    text-decoration: none;
+		text-decoration: none;
+		transition: background 0.5s;
 }
 
-.fa:hover {
-    background: rgba(101, 131, 195, 1);
-    transition: background 1s;
-}
+/*.fa:hover {
+    background: rgb(238, 238, 238);
+    transition: background 0.5s;
+}*/
 
 .fa-facebook {
     background: #F2F2F233;
@@ -347,4 +401,55 @@ header nav li:last-child{
   .geo {
     margin-top: 10vw !important;
   }
+}
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #404649;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;	
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
 }
