@@ -208,8 +208,8 @@ header nav li:last-child{
   text-align: center;
   opacity: 0.87;
   position: absolute;
-  top: 35%;
-  transform: translateY(-35%);
+  top: 40%;
+  transform: translateY(-40%);
   width: 100%;
   text-shadow: 1px 1px 1px #ff6161;
   cursor: default;
@@ -280,15 +280,21 @@ header nav li:last-child{
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
-	background-color: #333;
+/*	background-color: #333;*/
 }
+
+/*.about .grid li:nth-child(even) {
+	height: 50px;
+}*/
 
 .about .grid li.small{
 	flex-basis: 40%;
+
 }
 
 .about .grid li.large{
 	flex-basis: 60%;
+
 }
 
 
