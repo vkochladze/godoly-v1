@@ -316,6 +316,15 @@ header nav li:last-child{
 	}
 }
 
+@media (max-width: 600px) {
+	.about {
+		padding: 50px 0;
+	}
+	.about .grid li p {
+		font-size: 1.9vw;
+	}
+}
+
 /*----------------------
  	Features Section
 ----------------------*/
