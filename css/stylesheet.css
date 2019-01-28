@@ -161,6 +161,24 @@ header nav li:last-child{
 	}
 }
 
+@keyframes tintFade {
+	0% {
+		background-color: #3a647b;
+	}
+	100% {
+		background-color: #3a647b00;
+	}
+}
+
+@keyframes textFade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 /*----------------
  	Hero Section
 ----------------*/
@@ -197,8 +215,9 @@ header nav li:last-child{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3a647b;
-  opacity: 0.65;
+  background-color: #3a647b00;
+	opacity: 0.65;
+	animation: tintFade 5s ease-in;
 }
 
 .hero h1 {
@@ -214,7 +233,9 @@ header nav li:last-child{
   text-shadow: 1px 1px 1px #ff6161;
   cursor: default;
   animation: tracking-in-expand 1s;
-  z-index: 5;
+	z-index: 5;
+	opacity: 0;
+	animation: textFade 5s ease-in;
 }
 
 @keyframes tracking-in-expand {
