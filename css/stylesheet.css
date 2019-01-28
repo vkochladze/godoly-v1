@@ -179,6 +179,22 @@ header nav li:last-child{
 	}
 }
 
+@keyframes textAnimation {
+	0% {
+		position: absolute;
+		top: 40%;
+		transform: translateY(-40%);
+		font-size: 6vw;
+		right: 0;
+	}
+	100% {
+		top: 0;
+		transform: translateY(0);
+		font-size: 4vw;
+		right: 34vw;
+	}
+}
+
 /*----------------
  	Hero Section
 ----------------*/
@@ -222,20 +238,20 @@ header nav li:last-child{
 
 .hero h1 {
   color: white;
-  font-size: 6vw;
+  font-size: 4vw;
   font-family: 'Blacksword', sans-serif;
   text-align: center;
   opacity: 0.87;
   position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
+  top: 0;
+	transform: translateY(0);
+	right: 34vw;
   width: 100%;
   text-shadow: 1px 1px 1px #ff6161;
   cursor: default;
   animation: tracking-in-expand 1s;
 	z-index: 5;
-	opacity: 0;
-	animation: textFade 5s ease-in;
+	animation: textAnimation 5s ease-in;
 }
 
 @keyframes tracking-in-expand {
@@ -408,7 +424,7 @@ header nav li:last-child{
 /*--------*/
 
 .geo {
-  margin-top: 6vw;
+  margin-top: 4.5vw;
 }
 
 .social-media {
@@ -438,7 +454,7 @@ header nav li:last-child{
     animation: slide-bottom 1s;
 }
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
   h1 {
     font-size: 8vw !important;
   }
@@ -454,7 +470,7 @@ header nav li:last-child{
   .geo {
     margin-top: 10vw !important;
   }
-}
+}*/
 
 /*-------------
  	Footer
