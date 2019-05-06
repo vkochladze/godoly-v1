@@ -238,20 +238,20 @@ header nav li:last-child{
 
 .hero h1 {
   color: white;
-  font-size: 4vw;
+  font-size: 6vw;
   font-family: 'Blacksword', sans-serif;
   text-align: center;
-  opacity: 0.87;
+	/*opacity: 0.87;*/
+	opacity: 0;
   position: absolute;
-  top: 0;
-	transform: translateY(0);
-	right: 34vw;
+  top: 40%;
+	transform: translateY(-40%);
   width: 100%;
   text-shadow: 1px 1px 1px #ff6161;
   cursor: default;
   animation: tracking-in-expand 1s;
 	z-index: 5;
-	animation: textAnimation 5s ease-in;
+	animation: textFade 5s ease-in;
 }
 
 @keyframes tracking-in-expand {
@@ -424,7 +424,7 @@ header nav li:last-child{
 /*--------*/
 
 .geo {
-  margin-top: 4.5vw;
+  margin-top: 6vw;
 }
 
 .social-media {
